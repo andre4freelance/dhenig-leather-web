@@ -2,9 +2,23 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Toko Kulit Dhenig | Pusat Bahan Kulit Asli Jakarta Sejak 1997",
-  description: "Penyedia bahan kulit sapi & domba asli berkualitas tinggi (lokal & impor Italia) di Ruko Harco Mangga Dua, Jakarta Pusat. Melayani eceran & partai besar grosir.",
-  keywords: ["Toko Kulit Dhenig", "Bahan Kulit Jakarta", "Kulit Asli Mangga Dua", "Leather Supplier Jakarta", "Jual Kulit Sapi Asli", "Vegetable Tanned Leather Indonesia"]
+  title: "Dhenig Leather Jakarta | Premier Genuine Leather Supplier Est. 1997",
+  description: "Boutique supplier of premium cowhide & sheepskin leather (Fine Indonesian Tannery & Imported Italian Hides) based in Jakarta, Indonesia. Supplying bespoke ateliers, crafters, and international fashion houses since 1997.",
+  keywords: [
+    "Dhenig Leather Jakarta",
+    "Genuine Leather Supplier Indonesia",
+    "Italian Nappa Leather",
+    "Vegetable Tanned Leather Indonesia",
+    "Bespoke Leather Jacket Material",
+    "Full Grain Cowhide Exporter",
+    "Harco Mangga Dua Leather Store"
+  ],
+  openGraph: {
+    title: "Dhenig Leather Jakarta | Authentic Leather Since 1997",
+    description: "Source premium genuine leather hides: Italian Nappa, Veg-Tan, Pull-Up, and Custom Bespoke Garment Leathers with worldwide export shipping.",
+    type: "website",
+    locale: "en_US"
+  }
 };
 
 export default function RootLayout({
@@ -13,7 +27,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="id" className="scroll-smooth">
+    <html lang="en" className="scroll-smooth">
       <body className="antialiased min-h-screen selection:bg-[#b45309] selection:text-white">
         {children}
       </body>
