@@ -11,9 +11,7 @@ import {
   Clock,
   Phone,
   Truck,
-  Scissors,
-  ChevronRight,
-  ArrowRight
+  Scissors
 } from "lucide-react";
 
 export default function Home() {
@@ -21,7 +19,7 @@ export default function Home() {
 
   return (
     <div className="flex flex-col min-h-screen">
-      {/* Top Dispatch Notification Bar */}
+      {/* Top Dispatch Notification Bar: No dashes */}
       <div className="bg-[#451a03] text-[#faf8f5] text-[11px] sm:text-xs py-2 px-4 text-center font-normal tracking-normal">
         <div className="max-w-7xl mx-auto flex items-center justify-center space-x-2">
           <Truck className="w-3.5 h-3.5 text-stone-300 shrink-0" />
@@ -29,7 +27,7 @@ export default function Home() {
         </div>
       </div>
 
-      {/* Header Navigation: Fully responsive with mobile-friendly layout */}
+      {/* Header Navigation: Fully responsive without dashes */}
       <header className="sticky top-0 z-40 bg-[#faf8f5]/95 backdrop-blur-xs border-b border-[#e7e5e4]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 sm:h-20 flex items-center justify-between">
           <div className="flex flex-col">
@@ -37,7 +35,7 @@ export default function Home() {
               DHENIG LEATHER
             </span>
             <span className="text-[9px] sm:text-[10px] tracking-wider uppercase text-stone-500 font-medium">
-              Jakarta, Indonesia &bull; Established 1997
+              Jakarta, Indonesia (Established 1997)
             </span>
           </div>
 
@@ -53,16 +51,16 @@ export default function Home() {
               href={waUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center space-x-1.5 bg-[#78350f] hover:bg-[#451a03] text-white text-xs font-medium px-3.5 sm:px-4 py-2 rounded-full transition-colors shadow-xs"
+              className="inline-flex items-center space-x-1.5 bg-[#78350f] hover:bg-[#451a03] text-white text-xs font-medium px-3.5 sm:px-4 py-2 rounded-md transition-colors"
             >
               <MessageCircle className="w-3.5 h-3.5 text-emerald-400" />
-              <span>WhatsApp</span>
+              <span>WhatsApp Inquiries</span>
             </a>
           </div>
         </div>
       </header>
 
-      {/* Hero Section with Workshop Banner */}
+      {/* Hero Section with Workshop Banner and Authentic Grounded CTAs */}
       <section className="relative overflow-hidden bg-stone-900 text-white border-b border-[#e7e5e4]">
         <div className="absolute inset-0 z-0 opacity-40">
           <Image
@@ -89,22 +87,22 @@ export default function Home() {
               We stock Indonesian vegetable-tanned hides, oil pull-up cowhide, and imported Italian garment nappa in Harco Mangga Dua, Central Jakarta. Available by the side, roll, or bulk consignment.
             </p>
 
+            {/* Grounded, Non-AI-Slop Buttons: Clear, understated, and functional */}
             <div className="flex flex-col sm:flex-row gap-3 sm:gap-4">
               <a
                 href="#collection"
-                className="w-full sm:w-auto text-center bg-[#78350f] hover:bg-[#b45309] text-white font-medium text-xs sm:text-sm px-6 py-3.5 rounded-full transition-colors inline-flex items-center justify-center space-x-2"
+                className="w-full sm:w-auto text-center bg-[#78350f] hover:bg-[#5a270b] text-white font-medium text-xs sm:text-sm px-6 py-3 rounded-md transition-colors"
               >
-                <span>Browse Leather Swatches</span>
-                <ArrowRight className="w-4 h-4" />
+                View Current Stock
               </a>
               <a
                 href={waUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-full sm:w-auto text-center bg-white/10 hover:bg-white/20 backdrop-blur-xs text-white border border-white/25 font-medium text-xs sm:text-sm px-6 py-3.5 rounded-full transition-colors inline-flex items-center justify-center space-x-2"
+                className="w-full sm:w-auto text-center bg-stone-800/80 hover:bg-stone-800 text-stone-100 border border-stone-600 font-medium text-xs sm:text-sm px-6 py-3 rounded-md transition-colors inline-flex items-center justify-center space-x-2"
               >
                 <MessageCircle className="w-4 h-4 text-emerald-400" />
-                <span>Contact via WhatsApp</span>
+                <span>Ask About Thickness and Price</span>
               </a>
             </div>
 
@@ -116,10 +114,10 @@ export default function Home() {
               </div>
               <div>
                 <span className="font-serif text-xl sm:text-2xl font-bold text-white block">100%</span>
-                <span className="text-[11px] text-stone-300">Genuine cow & sheep</span>
+                <span className="text-[11px] text-stone-300">Genuine cow and sheep</span>
               </div>
               <div>
-                <span className="font-serif text-xl sm:text-2xl font-bold text-white block">Garut & Italy</span>
+                <span className="font-serif text-xl sm:text-2xl font-bold text-white block">Garut and Italy</span>
                 <span className="text-[11px] text-stone-300">Tannery sources</span>
               </div>
               <div>
@@ -145,7 +143,7 @@ export default function Home() {
           </div>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8">
-            <div className="p-6 rounded-2xl bg-[#faf8f5] border border-[#e7e5e4]">
+            <div className="p-6 rounded-xl bg-[#faf8f5] border border-[#e7e5e4]">
               <ShieldCheck className="w-8 h-8 text-[#78350f] mb-4" />
               <h3 className="font-serif font-bold text-base sm:text-lg text-[#1c1917] mb-2">Real Leather Only</h3>
               <p className="text-xs sm:text-sm text-stone-600 leading-relaxed">
@@ -153,7 +151,7 @@ export default function Home() {
               </p>
             </div>
 
-            <div className="p-6 rounded-2xl bg-[#faf8f5] border border-[#e7e5e4]">
+            <div className="p-6 rounded-xl bg-[#faf8f5] border border-[#e7e5e4]">
               <Award className="w-8 h-8 text-[#78350f] mb-4" />
               <h3 className="font-serif font-bold text-base sm:text-lg text-[#1c1917] mb-2">Store Since 1997</h3>
               <p className="text-xs sm:text-sm text-stone-600 leading-relaxed">
@@ -161,15 +159,15 @@ export default function Home() {
               </p>
             </div>
 
-            <div className="p-6 rounded-2xl bg-[#faf8f5] border border-[#e7e5e4]">
+            <div className="p-6 rounded-xl bg-[#faf8f5] border border-[#e7e5e4]">
               <Globe2 className="w-8 h-8 text-[#78350f] mb-4" />
-              <h3 className="font-serif font-bold text-base sm:text-lg text-[#1c1917] mb-2">Domestic & Italian Sourcing</h3>
+              <h3 className="font-serif font-bold text-base sm:text-lg text-[#1c1917] mb-2">Domestic and Italian Sourcing</h3>
               <p className="text-xs sm:text-sm text-stone-600 leading-relaxed">
                 Heavy cowhides from tanneries in East and West Java, paired with soft garment nappa and sheepskin imported from Italy.
               </p>
             </div>
 
-            <div className="p-6 rounded-2xl bg-[#faf8f5] border border-[#e7e5e4]">
+            <div className="p-6 rounded-xl bg-[#faf8f5] border border-[#e7e5e4]">
               <Scissors className="w-8 h-8 text-[#78350f] mb-4" />
               <h3 className="font-serif font-bold text-base sm:text-lg text-[#1c1917] mb-2">Flexible Quantities</h3>
               <p className="text-xs sm:text-sm text-stone-600 leading-relaxed">
@@ -197,7 +195,7 @@ export default function Home() {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8">
-            <div className="p-6 sm:p-8 rounded-2xl bg-[#faf8f5] border border-[#e7e5e4]">
+            <div className="p-6 sm:p-8 rounded-xl bg-[#faf8f5] border border-[#e7e5e4]">
               <div className="w-8 h-8 rounded-full bg-[#78350f] text-white flex items-center justify-center font-bold text-xs mb-4">
                 1
               </div>
@@ -207,21 +205,21 @@ export default function Home() {
               </p>
             </div>
 
-            <div className="p-6 sm:p-8 rounded-2xl bg-[#faf8f5] border border-[#e7e5e4]">
+            <div className="p-6 sm:p-8 rounded-xl bg-[#faf8f5] border border-[#e7e5e4]">
               <div className="w-8 h-8 rounded-full bg-[#78350f] text-white flex items-center justify-center font-bold text-xs mb-4">
                 2
               </div>
-              <h3 className="font-serif font-bold text-base sm:text-lg text-[#1c1917] mb-2">Review Photos & Video</h3>
+              <h3 className="font-serif font-bold text-base sm:text-lg text-[#1c1917] mb-2">Review Photos and Video</h3>
               <p className="text-xs sm:text-sm text-stone-600 leading-relaxed">
                 Our team sends daylight photos and video of the exact hides, including grain details, back suede condition, and footage stamps.
               </p>
             </div>
 
-            <div className="p-6 sm:p-8 rounded-2xl bg-[#faf8f5] border border-[#e7e5e4]">
+            <div className="p-6 sm:p-8 rounded-xl bg-[#faf8f5] border border-[#e7e5e4]">
               <div className="w-8 h-8 rounded-full bg-[#78350f] text-white flex items-center justify-center font-bold text-xs mb-4">
                 3
               </div>
-              <h3 className="font-serif font-bold text-base sm:text-lg text-[#1c1917] mb-2">Packaging & Dispatch</h3>
+              <h3 className="font-serif font-bold text-base sm:text-lg text-[#1c1917] mb-2">Packaging and Dispatch</h3>
               <p className="text-xs sm:text-sm text-stone-600 leading-relaxed">
                 Hides are rolled around tubes to prevent crease marks, wrapped in protective film, and handed to local couriers or international air cargo.
               </p>
@@ -230,14 +228,14 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Location & Contact Section with Real Rolls Image */}
+      {/* Location & Contact Section with Genuine Leather Rolls Image */}
       <section id="location" className="py-16 sm:py-20 bg-[#faf8f5] border-b border-[#e7e5e4]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="bg-white border border-[#e7e5e4] rounded-3xl overflow-hidden shadow-xs">
+          <div className="bg-white border border-[#e7e5e4] rounded-2xl overflow-hidden shadow-xs">
             <div className="grid grid-cols-1 lg:grid-cols-12">
               {/* Left Column: Store Details */}
               <div className="lg:col-span-7 p-6 sm:p-10 md:p-12">
-                <span className="text-xs uppercase tracking-wider text-[#78350f] font-semibold">Store & Warehouse</span>
+                <span className="text-xs uppercase tracking-wider text-[#78350f] font-semibold">Store and Warehouse</span>
                 <h2 className="font-serif text-2xl sm:text-3xl font-bold text-[#1c1917] mt-1 mb-4">
                   Visit Toko Kulit Dhenig
                 </h2>
@@ -249,7 +247,7 @@ export default function Home() {
                   <div className="flex items-start space-x-3">
                     <MapPin className="w-4 h-4 sm:w-5 sm:h-5 text-[#78350f] shrink-0 mt-0.5" />
                     <div>
-                      <strong className="text-[#1c1917] block">Toko Kulit Dhenig (Dhenig Leather)</strong>
+                      <strong className="text-[#1c1917] block">Toko Kulit Dhenig</strong>
                       <span>{storeInfo.address.line1}, {storeInfo.address.line2}, {storeInfo.address.city} {storeInfo.address.postalCode}, Indonesia</span>
                     </div>
                   </div>
@@ -272,7 +270,7 @@ export default function Home() {
                     href={storeInfo.address.mapsUrl}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-center bg-[#78350f] hover:bg-[#451a03] text-white text-xs font-medium px-5 py-3 rounded-xl transition-colors inline-flex items-center justify-center space-x-2 shadow-xs"
+                    className="text-center bg-[#78350f] hover:bg-[#451a03] text-white text-xs font-medium px-5 py-3 rounded-md transition-colors inline-flex items-center justify-center space-x-2"
                   >
                     <MapPin className="w-4 h-4" />
                     <span>Open in Google Maps</span>
@@ -281,7 +279,7 @@ export default function Home() {
                     href={waUrl}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-center bg-white hover:bg-stone-50 text-stone-800 border border-[#e7e5e4] text-xs font-medium px-5 py-3 rounded-xl transition-colors inline-flex items-center justify-center space-x-2"
+                    className="text-center bg-white hover:bg-stone-50 text-stone-800 border border-[#e7e5e4] text-xs font-medium px-5 py-3 rounded-md transition-colors inline-flex items-center justify-center space-x-2"
                   >
                     <MessageCircle className="w-4 h-4 text-emerald-600" />
                     <span>Message WhatsApp Desk</span>
@@ -289,17 +287,17 @@ export default function Home() {
                 </div>
               </div>
 
-              {/* Right Column: Store Atmosphere Image */}
+              {/* Right Column: Genuine Leather Rolls in Workshop / Warehouse */}
               <div className="lg:col-span-5 relative min-h-[260px] sm:min-h-[320px] lg:min-h-full bg-stone-200">
                 <Image
                   src="/images/store/leather-rolls-store.jpg"
-                  alt="Rolls of leather stored in the warehouse"
+                  alt="Rolls of tanned leather hides stacked in workshop"
                   fill
                   className="object-cover"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent flex items-end p-6">
+                <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent flex items-end p-6">
                   <span className="text-white text-xs font-medium">
-                    Rolls of dyed cowhide ready for selection at Harco Mangga Dua.
+                    Stocked rolls of genuine leather hides ready for cutting and delivery.
                   </span>
                 </div>
               </div>
@@ -308,13 +306,13 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Footer */}
+      {/* Footer without dashes */}
       <footer className="bg-[#1c1917] text-stone-400 py-12 sm:py-16 text-xs">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-6 pb-8 border-b border-stone-800">
             <div>
               <span className="font-serif text-lg sm:text-xl font-bold text-white block mb-1">DHENIG LEATHER</span>
-              <span className="text-stone-400 text-xs">Genuine Leather Retail & Wholesale. Harco Mangga Dua, Jakarta Pusat.</span>
+              <span className="text-stone-400 text-xs">Genuine Leather Retail and Wholesale. Harco Mangga Dua, Jakarta Pusat.</span>
             </div>
             <div className="flex flex-wrap gap-4 sm:gap-6 text-stone-300">
               <a href="#about" className="hover:text-white transition-colors">About</a>
@@ -327,12 +325,14 @@ export default function Home() {
           </div>
           <div className="pt-6 sm:pt-8 flex flex-col sm:flex-row justify-between items-start sm:items-center gap-3 text-[11px] text-stone-500">
             <p>&copy; {new Date().getFullYear()} Toko Kulit Dhenig. Established 1997.</p>
-            <p>Digital showroom presentation concept.</p>
+            <p>
+              Website crafted by <a href="mailto:andre4freelance@gmail.com" className="text-stone-300 hover:underline">andre4freelance@gmail.com</a>
+            </p>
           </div>
         </div>
       </footer>
 
-      {/* Mobile-Friendly Sticky Floating WhatsApp CTA */}
+      {/* Floating WhatsApp CTA */}
       <div className="fixed bottom-4 right-4 sm:bottom-6 sm:right-6 z-50">
         <a
           href={waUrl}
