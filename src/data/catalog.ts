@@ -38,7 +38,7 @@ export const storeInfo: StoreInfo = {
   established: 1997,
   tagline: "Wholesale and retail genuine leather supplier based in Harco Mangga Dua, Jakarta.",
   phone: "+62 21 6128888",
-  whatsapp: "+6281234567890",
+  whatsapp: "+628569888877",
   whatsappTemplate: "Hello Dhenig Leather, I saw your catalog and would like to check available hides and pricing...",
   instagram: "@dhenigleather",
   address: {

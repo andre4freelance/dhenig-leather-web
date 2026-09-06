@@ -254,7 +254,7 @@ export default function App() {
                   </div>
                   <div className="flex items-center space-x-3">
                     <Phone className="w-4 h-4 sm:w-5 sm:h-5 text-[#6b3310] shrink-0" />
-                    <span>{storeInfo.phone}</span>
+                    <span>{storeInfo.phone} / +62 856 9888 877 (WhatsApp)</span>
                   </div>
                   <div className="flex items-center space-x-3">
                     <Truck className="w-4 h-4 sm:w-5 sm:h-5 text-[#6b3310] shrink-0" />
