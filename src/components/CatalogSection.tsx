@@ -3,9 +3,9 @@
 import React, { useState } from "react";
 import { sampleProducts, LeatherProduct, storeInfo } from "@/data/catalog";
 import { ImageWithFallback } from "@/components/ImageWithFallback";
-import { MessageCircle, Info, ExternalLink } from "lucide-react";
+import { MessageCircle, Info } from "lucide-react";
 
-type CategoryFilter = "all" | "pull-up" | "vegetable-tanned" | "crazy-horse" | "nappa" | "exotic";
+type CategoryFilter = "all" | "pullup" | "vegtan" | "crazyhorse" | "nappa" | "exotic";
 
 export function CatalogSection() {
   const [selectedCategory, setSelectedCategory] = useState<CategoryFilter>("all");
@@ -13,10 +13,10 @@ export function CatalogSection() {
 
   const categories = [
     { id: "all", label: "All Swatches" },
-    { id: "nappa", label: "Nappa & Garment" },
-    { id: "vegetable-tanned", label: "Vegetable-Tanned" },
-    { id: "pull-up", label: "Oil Pull-Up" },
-    { id: "crazy-horse", label: "Crazy Horse" },
+    { id: "nappa", label: "Nappa and Garment" },
+    { id: "vegtan", label: "Vegetable Tanned" },
+    { id: "pullup", label: "Oil Pull Up" },
+    { id: "crazyhorse", label: "Crazy Horse" },
     { id: "exotic", label: "Embossed" }
   ];
 
@@ -36,7 +36,7 @@ export function CatalogSection() {
         <div className="max-w-2xl mx-auto text-center mb-10 sm:mb-12">
           <span className="text-xs uppercase tracking-wider text-[#78350f] font-semibold">Leather Samples</span>
           <h2 className="font-serif text-2xl sm:text-3xl md:text-4xl font-bold text-[#1c1917] mt-1 mb-3">
-            In-Stock Leather Articles
+            Available Leather Articles
           </h2>
           <p className="text-stone-600 text-sm sm:text-base leading-relaxed">
             We supply whole hides, sides, and cuts for crafters, sample rooms, and production workshops.

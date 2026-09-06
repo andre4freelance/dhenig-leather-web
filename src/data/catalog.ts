@@ -1,7 +1,7 @@
 export interface LeatherProduct {
   id: string;
   name: string;
-  category: "pull-up" | "vegetable-tanned" | "crazy-horse" | "nappa" | "exotic";
+  category: "pullup" | "vegtan" | "crazyhorse" | "nappa" | "exotic";
   categoryLabel: string;
   origin: "Java Tanneries (Garut & Magetan)" | "Italian Imported Tannery";
   finish: string;
@@ -55,7 +55,7 @@ export const storeInfo: StoreInfo = {
 
 export const sampleProducts: LeatherProduct[] = [
   {
-    id: "milano-soft-nappa",
+    id: "milano_soft_nappa",
     name: "Milano Soft Nappa Cowhide",
     category: "nappa",
     categoryLabel: "Nappa",
@@ -69,7 +69,7 @@ export const sampleProducts: LeatherProduct[] = [
     highlight: true
   },
   {
-    id: "italian-sheep-garment",
+    id: "italian_sheep_garment",
     name: "Italian Sheepskin Garment Leather",
     category: "nappa",
     categoryLabel: "Garment Nappa",
@@ -83,7 +83,7 @@ export const sampleProducts: LeatherProduct[] = [
     highlight: true
   },
   {
-    id: "red-wine-crocodile-embossed",
+    id: "red_wine_crocodile_embossed",
     name: "Embossed Crocodile Print Cowhide",
     category: "exotic",
     categoryLabel: "Embossed",
@@ -97,37 +97,37 @@ export const sampleProducts: LeatherProduct[] = [
     highlight: true
   },
   {
-    id: "italian-veg-tan-full-grain",
-    name: "Tuscan Vegetable-Tanned Cowhide",
-    category: "vegetable-tanned",
-    categoryLabel: "Veg-Tan",
+    id: "italian_veg_tan_full_grain",
+    name: "Tuscan Vegetable Tanned Cowhide",
+    category: "vegtan",
+    categoryLabel: "Vegetable Tanned",
     origin: "Italian Imported Tannery",
     finish: "Natural smooth grain",
     thickness: "2.0 to 2.5 mm",
     colors: ["Natural Vachetta", "Saddle Tan", "Chestnut"],
-    suitableFor: ["Heavy-duty belts", "Briefcases", "Tool sheaths"],
+    suitableFor: ["Sturdy belts", "Briefcases", "Tool sheaths"],
     image: "/images/products/italian-veg-tan.jpg",
     description: "Full grain cowhide tanned with natural tree bark extracts. It develops a rich darker patina with handling and exposure to light.",
     highlight: true
   },
   {
-    id: "classic-pull-up-heritage",
-    name: "Oil Pull-Up Cowhide",
-    category: "pull-up",
-    categoryLabel: "Pull-Up",
+    id: "classic_pull_up_heritage",
+    name: "Oil Pull Up Cowhide",
+    category: "pullup",
+    categoryLabel: "Pull Up",
     origin: "Java Tanneries (Garut & Magetan)",
-    finish: "Waxy oil-saturated surface",
+    finish: "Waxy oil saturated surface",
     thickness: "1.6 to 1.8 mm",
     colors: ["Havana Brown", "Tobacco", "Charcoal"],
     suitableFor: ["Boots", "Duffel bags", "Field notes covers"],
     image: "/images/products/pull-up-classic.jpg",
-    description: "Treated with oils and waxes so that bending or pulling creates a lighter tone along the crease, producing a broken-in look.",
+    description: "Treated with oils and waxes so that bending or pulling creates a lighter tone along the crease, producing an authentic aged look.",
     highlight: true
   },
   {
-    id: "rustic-crazy-horse",
+    id: "rustic_crazy_horse",
     name: "Waxed Crazy Horse Cowhide",
-    category: "crazy-horse",
+    category: "crazyhorse",
     categoryLabel: "Crazy Horse",
     origin: "Java Tanneries (Garut & Magetan)",
     finish: "Buffed matte wax finish",

@@ -84,7 +84,7 @@ export default function Home() {
             </h1>
 
             <p className="text-sm sm:text-base md:text-lg text-stone-200 mb-8 leading-relaxed">
-              We stock Indonesian vegetable-tanned hides, oil pull-up cowhide, and imported Italian garment nappa in Harco Mangga Dua, Central Jakarta. Available by the side, roll, or bulk consignment.
+              We stock Indonesian vegetable tanned hides, oil pull up cowhide, and imported Italian garment nappa in Harco Mangga Dua, Central Jakarta. Available by the side, roll, or bulk consignment.
             </p>
 
             {/* Grounded, Non-AI-Slop Buttons: Clear, understated, and functional */}
@@ -171,7 +171,7 @@ export default function Home() {
               <Scissors className="w-8 h-8 text-[#78350f] mb-4" />
               <h3 className="font-serif font-bold text-base sm:text-lg text-[#1c1917] mb-2">Flexible Quantities</h3>
               <p className="text-xs sm:text-sm text-stone-600 leading-relaxed">
-                Buy single sides for prototypes or order full dye lots with square-footage grading for brand production lines.
+                Buy single sides for prototypes or order full dye lots with square footage grading for brand production lines.
               </p>
             </div>
           </div>
