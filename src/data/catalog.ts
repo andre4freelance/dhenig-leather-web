@@ -3,7 +3,7 @@ export interface LeatherProduct {
   name: string;
   category: "pull-up" | "vegetable-tanned" | "crazy-horse" | "nappa" | "exotic";
   categoryLabel: string;
-  origin: "Indonesian Tannery (Garut/Magetan)" | "Italian Imported Tannery";
+  origin: "Java Tanneries (Garut & Magetan)" | "Italian Imported Tannery";
   finish: string;
   thickness: string;
   colors: string[];
@@ -34,108 +34,108 @@ export interface StoreInfo {
 }
 
 export const storeInfo: StoreInfo = {
-  name: "Dhenig Leather Jakarta",
+  name: "Dhenig Leather",
   established: 1997,
-  tagline: "Premier Genuine Leather Supplier & Bespoke Atelier — Jakarta, Est. 1997",
+  tagline: "Wholesale and retail genuine leather supplier based in Harco Mangga Dua, Jakarta.",
   phone: "+62 21 6128888",
-  whatsapp: "+6281234567890", // Official contact channel
-  whatsappTemplate: "Hello Dhenig Leather, I am interested in sourcing genuine leather hides and inquiring about worldwide shipping / wholesale details...",
+  whatsapp: "+6281234567890",
+  whatsappTemplate: "Hello Dhenig Leather, I saw your catalog and would like to check available hides and pricing...",
   instagram: "@dhenigleather",
   address: {
     line1: "Ruko Harco Mangga Dua Block B No. 2",
     line2: "Jl. Mangga Dua Raya, Sawah Besar",
-    city: "Central Jakarta",
+    city: "Jakarta Pusat",
     postalCode: "10730",
     country: "Indonesia",
     mapsUrl: "https://maps.google.com/?q=Harco+Mangga+Dua+Jakarta"
   },
-  operatingHours: "Monday – Saturday: 09:00 AM – 05:00 PM (GMT+7)",
-  internationalShipping: "Worldwide Courier Air Cargo (DHL / FedEx) & Ocean Freight Available"
+  operatingHours: "Monday to Saturday: 9:00 AM to 5:00 PM (WIB / GMT+7)",
+  internationalShipping: "Air courier (DHL and FedEx) or sea cargo for larger orders"
 };
 
 export const sampleProducts: LeatherProduct[] = [
   {
     id: "milano-soft-nappa",
-    name: "Milano Full Grain Soft Nappa",
+    name: "Milano Soft Nappa Cowhide",
     category: "nappa",
-    categoryLabel: "Nappa & Garment",
+    categoryLabel: "Nappa",
     origin: "Italian Imported Tannery",
-    finish: "Supple Natural Pebble Grain",
-    thickness: "1.0 – 1.2 mm (2.5 – 3.0 oz)",
-    colors: ["Jet Black", "Ivory Tan", "Mocha Brown"],
-    suitableFor: ["Bespoke Leather Jackets", "Fine Handbags", "Luxury Upholstery"],
+    finish: "Milled pebble grain",
+    thickness: "1.0 to 1.2 mm",
+    colors: ["Black", "Tan", "Dark Brown"],
+    suitableFor: ["Bespoke jackets", "Soft handbags", "Lining and upholstery"],
     image: "/images/products/nappa-leather.jpg",
-    description: "Ultra-plush Italian nappa cowhide crafted for bespoke apparel, gloves, and premium soft accessories requiring unmatched drape and softness.",
+    description: "Pliable cowhide with a soft temper and fine milled grain. Suitable for garments and unlined bags that need flexibility.",
     highlight: true
   },
   {
     id: "italian-sheep-garment",
-    name: "Italian Sheepskin Nappa Garment",
+    name: "Italian Sheepskin Garment Leather",
     category: "nappa",
-    categoryLabel: "Nappa & Garment",
+    categoryLabel: "Garment Nappa",
     origin: "Italian Imported Tannery",
-    finish: "Silky Smooth Aniline Garment Finish",
-    thickness: "0.7 – 0.9 mm (1.8 – 2.2 oz)",
-    colors: ["Espresso Brown", "Classic Cognac", "Onyx Black"],
-    suitableFor: ["Custom Aviator Jackets", "Motorcycle Garments", "Designer Vests"],
+    finish: "Smooth aniline finish",
+    thickness: "0.7 to 0.9 mm",
+    colors: ["Espresso", "Cognac", "Onyx Black"],
+    suitableFor: ["Custom jackets", "Vests", "Apparel panels"],
     image: "/images/products/italian-sheep-jacket.jpg",
-    description: "Tailored specifically for international fashion designers and atelier brands seeking pristine Italian lamb/sheepskin hides with butter-soft hand feel.",
+    description: "Lightweight Italian sheepskin with a silky surface. Used for leather jackets, apparel, and lightweight accessories.",
     highlight: true
   },
   {
     id: "red-wine-crocodile-embossed",
-    name: "Red Wine Crocodile Embossed Cowhide",
+    name: "Embossed Crocodile Print Cowhide",
     category: "exotic",
-    categoryLabel: "Exotic & Embossed",
-    origin: "Indonesian Tannery (Garut/Magetan)",
-    finish: "High-Gloss Glazed Crocodile Print",
-    thickness: "1.4 – 1.6 mm (3.5 – 4.0 oz)",
-    colors: ["Bordeaux Red Wine", "Royal Emerald", "Midnight Navy"],
-    suitableFor: ["Luxury Statement Handbags", "Executive Portfolios", "Collector Wallets"],
+    categoryLabel: "Embossed",
+    origin: "Java Tanneries (Garut & Magetan)",
+    finish: "Glazed embossed scale pattern",
+    thickness: "1.4 to 1.6 mm",
+    colors: ["Deep Red Wine", "Bottle Green", "Dark Navy"],
+    suitableFor: ["Structured tote bags", "Wallets", "Small leather goods"],
     image: "/images/products/red-wine-croc-bag.webp",
-    description: "Exquisite high-relief crocodile grain embossed on top-grade cowhide, offering the opulent visual texture of exotic hides with maximum durability.",
+    description: "Firm cowhide embossed with a distinct crocodile grain and glazed for wear resistance. Holds structure well in small goods.",
     highlight: true
   },
   {
     id: "italian-veg-tan-full-grain",
-    name: "Italian Tuscan Vegetable Tanned",
+    name: "Tuscan Vegetable-Tanned Cowhide",
     category: "vegetable-tanned",
-    categoryLabel: "Vegetable Tanned (Veg-Tan)",
+    categoryLabel: "Veg-Tan",
     origin: "Italian Imported Tannery",
-    finish: "Natural Smooth Aniline with Rich Patina",
-    thickness: "2.0 – 2.5 mm (5.0 – 6.5 oz)",
-    colors: ["Natural Vachetta", "Saddle Tan", "Dark Chestnut"],
-    suitableFor: ["Heritage Belts", "Structured Briefcases", "Artisan Sheaths & Straps"],
-    image: "/images/products/italian-veg-tan.jpg", // Gracefully handled by SVG fallback
-    description: "Traditional pit-tanned leather infused with natural tree barks and oils. Ages gracefully with a golden patina, ideal for master leathercrafters.",
+    finish: "Natural smooth grain",
+    thickness: "2.0 to 2.5 mm",
+    colors: ["Natural Vachetta", "Saddle Tan", "Chestnut"],
+    suitableFor: ["Heavy-duty belts", "Briefcases", "Tool sheaths"],
+    image: "/images/products/italian-veg-tan.jpg",
+    description: "Full grain cowhide tanned with natural tree bark extracts. It develops a rich darker patina with handling and exposure to light.",
     highlight: true
   },
   {
     id: "classic-pull-up-heritage",
-    name: "Javanese Heritage Oily Pull-Up",
+    name: "Oil Pull-Up Cowhide",
     category: "pull-up",
-    categoryLabel: "Pull-Up Leather",
-    origin: "Indonesian Tannery (Garut/Magetan)",
-    finish: "Heavy Wax & Oil Burst Effect",
-    thickness: "1.6 – 1.8 mm (4.0 – 4.5 oz)",
-    colors: ["Havana Sunburst", "Vintage Walnut", "Distressed Tobacco"],
-    suitableFor: ["Work Boots", "Rugged Duffel Bags", "Classic Bifold Wallets"],
-    image: "/images/products/pull-up-classic.jpg", // Gracefully handled by SVG fallback
-    description: "Rich wax and oil concentration that produces a dramatic lightning color burst when folded, building authentic vintage patina over time.",
+    categoryLabel: "Pull-Up",
+    origin: "Java Tanneries (Garut & Magetan)",
+    finish: "Waxy oil-saturated surface",
+    thickness: "1.6 to 1.8 mm",
+    colors: ["Havana Brown", "Tobacco", "Charcoal"],
+    suitableFor: ["Boots", "Duffel bags", "Field notes covers"],
+    image: "/images/products/pull-up-classic.jpg",
+    description: "Treated with oils and waxes so that bending or pulling creates a lighter tone along the crease, producing a broken-in look.",
     highlight: true
   },
   {
     id: "rustic-crazy-horse",
-    name: "Rustic Crazy Horse Waxed Nubuck",
+    name: "Waxed Crazy Horse Cowhide",
     category: "crazy-horse",
     categoryLabel: "Crazy Horse",
-    origin: "Indonesian Tannery (Garut/Magetan)",
-    finish: "Matte Waxed Velvet Texture",
-    thickness: "1.8 – 2.0 mm (4.5 – 5.0 oz)",
-    colors: ["Desert Camel", "Forest Olive", "Charcoal Gray"],
-    suitableFor: ["Field Messenger Bags", "Traveler Journals", "Heritage Footwear"],
-    image: "/images/products/crazy-horse.jpg", // Gracefully handled by SVG fallback
-    description: "Full grain cowhide buffed and saturated with specialty waxes. Responds to every scratch and rub with distinctive vintage character.",
+    origin: "Java Tanneries (Garut & Magetan)",
+    finish: "Buffed matte wax finish",
+    thickness: "1.8 to 2.0 mm",
+    colors: ["Desert Tan", "Olive Brown", "Dark Gray"],
+    suitableFor: ["Messenger bags", "Journal covers", "Casual footwear"],
+    image: "/images/products/crazy-horse.jpg",
+    description: "Buffed full grain surface coated in wax. Scuffs and surface marks blend in with rubbing, giving each piece an aged character.",
     highlight: false
   }
 ];

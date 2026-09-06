@@ -10,6 +10,7 @@ interface ImageWithFallbackProps {
   className?: string;
   aspectRatio?: string;
   badgeLabel?: string;
+  priority?: boolean;
 }
 
 export function ImageWithFallback({
@@ -17,7 +18,8 @@ export function ImageWithFallback({
   alt,
   className = "",
   aspectRatio = "aspect-[4/3]",
-  badgeLabel
+  badgeLabel,
+  priority = false
 }: ImageWithFallbackProps) {
   const [error, setError] = useState(false);
 
@@ -28,23 +30,24 @@ export function ImageWithFallback({
           src={src}
           alt={alt}
           fill
-          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-          className="object-cover transition-transform duration-500 hover:scale-105"
+          priority={priority}
+          sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+          className="object-cover transition-transform duration-300 hover:scale-105"
           onError={() => setError(true)}
         />
       ) : (
-        <div className="absolute inset-0 flex flex-col items-center justify-center p-6 text-center bg-gradient-to-br from-[#f5f1ea] via-[#ebe5da] to-[#dfd7c9] text-[#78350f]">
-          <div className="w-14 h-14 rounded-2xl bg-[#78350f]/10 flex items-center justify-center mb-3 text-[#78350f] border border-[#78350f]/20">
-            <Layers className="w-7 h-7" />
+        <div className="absolute inset-0 flex flex-col items-center justify-center p-4 sm:p-6 text-center bg-[#f5f1ea] text-[#78350f]">
+          <div className="w-12 h-12 rounded-xl bg-[#78350f]/10 flex items-center justify-center mb-2.5 text-[#78350f] border border-[#78350f]/20">
+            <Layers className="w-6 h-6" />
           </div>
-          <span className="font-serif font-bold text-sm tracking-wide text-[#1c1917] max-w-[200px] line-clamp-2">
+          <span className="font-serif font-bold text-xs sm:text-sm text-[#1c1917] max-w-[200px] line-clamp-2">
             {alt}
           </span>
-          <span className="text-[11px] font-medium text-[#78350f] tracking-wider uppercase mt-1">
+          <span className="text-[10px] font-medium text-stone-500 uppercase tracking-wider mt-1">
             Genuine Leather Swatch
           </span>
           {badgeLabel && (
-            <span className="mt-2 text-[10px] bg-[#78350f]/15 text-[#451a03] font-semibold px-2.5 py-0.5 rounded-full">
+            <span className="mt-2 text-[10px] bg-white border border-[#e7e5e4] text-[#44403c] font-medium px-2 py-0.5 rounded-full">
               {badgeLabel}
             </span>
           )}

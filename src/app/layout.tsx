@@ -2,23 +2,17 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Dhenig Leather Jakarta | Premier Genuine Leather Supplier Est. 1997",
-  description: "Boutique supplier of premium cowhide & sheepskin leather (Fine Indonesian Tannery & Imported Italian Hides) based in Jakarta, Indonesia. Supplying bespoke ateliers, crafters, and international fashion houses since 1997.",
+  title: "Dhenig Leather | Genuine Leather Supplier in Jakarta Since 1997",
+  description: "Stocking full grain cowhide, Italian garment sheepskin, vegetable-tanned hides, and pull-up leathers in Harco Mangga Dua, Jakarta. Supplying workshops and brands worldwide.",
   keywords: [
     "Dhenig Leather Jakarta",
-    "Genuine Leather Supplier Indonesia",
-    "Italian Nappa Leather",
-    "Vegetable Tanned Leather Indonesia",
-    "Bespoke Leather Jacket Material",
-    "Full Grain Cowhide Exporter",
-    "Harco Mangga Dua Leather Store"
-  ],
-  openGraph: {
-    title: "Dhenig Leather Jakarta | Authentic Leather Since 1997",
-    description: "Source premium genuine leather hides: Italian Nappa, Veg-Tan, Pull-Up, and Custom Bespoke Garment Leathers with worldwide export shipping.",
-    type: "website",
-    locale: "en_US"
-  }
+    "Leather Supplier Jakarta",
+    "Harco Mangga Dua Leather",
+    "Italian Nappa Leather Indonesia",
+    "Vegetable Tanned Leather Jakarta",
+    "Garut Cowhide Supplier",
+    "Bespoke Leather Sourcing"
+  ]
 };
 
 export default function RootLayout({
@@ -28,7 +22,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="scroll-smooth">
-      <body className="antialiased min-h-screen selection:bg-[#b45309] selection:text-white">
+      <body className="antialiased min-h-screen selection:bg-[#78350f] selection:text-white bg-[#faf8f5] text-[#44403c]">
         {children}
       </body>
     </html>
