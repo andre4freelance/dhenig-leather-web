@@ -1,7 +1,4 @@
-"use client";
-
 import React, { useState } from "react";
-import Image from "next/image";
 import { Layers } from "lucide-react";
 
 interface ImageWithFallbackProps {
@@ -10,7 +7,6 @@ interface ImageWithFallbackProps {
   className?: string;
   aspectRatio?: string;
   badgeLabel?: string;
-  priority?: boolean;
 }
 
 export function ImageWithFallback({
@@ -18,21 +14,18 @@ export function ImageWithFallback({
   alt,
   className = "",
   aspectRatio = "aspect-[4/3]",
-  badgeLabel,
-  priority = false
+  badgeLabel
 }: ImageWithFallbackProps) {
   const [error, setError] = useState(false);
 
   return (
     <div className={`relative overflow-hidden bg-[#e8e2d5] ${aspectRatio} ${className}`}>
       {!error ? (
-        <Image
+        <img
           src={src}
           alt={alt}
-          fill
-          priority={priority}
-          sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
-          className="object-cover transition-transform duration-300 hover:scale-105"
+          loading="lazy"
+          className="w-full h-full object-cover transition-transform duration-300 hover:scale-105"
           onError={() => setError(true)}
         />
       ) : (

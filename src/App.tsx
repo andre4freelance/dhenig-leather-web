@@ -1,5 +1,4 @@
 import React from "react";
-import Image from "next/image";
 import { storeInfo } from "@/data/catalog";
 import { CatalogSection } from "@/components/CatalogSection";
 import {
@@ -14,7 +13,7 @@ import {
   Scissors
 } from "lucide-react";
 
-export default function Home() {
+export default function App() {
   const waUrl = `https://wa.me/${storeInfo.whatsapp.replace(/[^0-9]/g, "")}?text=${encodeURIComponent(storeInfo.whatsappTemplate)}`;
 
   return (
@@ -63,12 +62,10 @@ export default function Home() {
       {/* Hero Section with Workshop Banner */}
       <section className="relative overflow-hidden bg-stone-950 text-white border-b border-[#dcd4c5]">
         <div className="absolute inset-0 z-0 opacity-40">
-          <Image
+          <img
             src="/images/hero/leather-workshop-hero.jpg"
             alt="Leather craftsman workshop table"
-            fill
-            priority
-            className="object-cover object-center"
+            className="w-full h-full object-cover object-center"
           />
         </div>
         <div className="absolute inset-0 z-0 bg-gradient-to-t from-stone-950/90 via-stone-900/60 to-stone-950/70" />
@@ -289,11 +286,10 @@ export default function Home() {
 
               {/* Right Column: Genuine Leather Rolls in Workshop / Warehouse */}
               <div className="lg:col-span-5 relative min-h-[260px] sm:min-h-[320px] lg:min-h-full bg-stone-200">
-                <Image
+                <img
                   src="/images/store/leather-rolls-store.jpg"
                   alt="Rolls of tanned leather hides stacked in workshop"
-                  fill
-                  className="object-cover"
+                  className="w-full h-full object-cover"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/75 via-black/20 to-transparent flex items-end p-6">
                   <span className="text-white text-xs font-medium">
